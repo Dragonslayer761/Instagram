@@ -1,10 +1,10 @@
 import React from 'react';
 import {useState,useContext,useEffect} from 'react';
-//import {useHistory} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import FireBaseContext from '../context/firebase';
 
-function Login() {
-    // const history = useHistory();
+
+export default function Login() {
     const { firebase } = useContext(FireBaseContext);
 
     const [email, setEmail] = useState('');
@@ -19,9 +19,7 @@ function Login() {
 
     return (
         <div>
-            <p>login page i am</p>
+             <p>login page i am</p>
         </div>
-    );
+    )
 }
-
-export default Login;
