@@ -9,7 +9,7 @@ import './styles/app.css';
 ReactDOM.render(
  
     <FireBaseContext.Provider value={{firebase,FieldValue}}>
-    <App />
+      <App />
     </FireBaseContext.Provider>
   ,
   document.getElementById('root')
